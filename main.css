@@ -172,7 +172,7 @@ body {
 /* Created on 27/04/2020 */
 .header {
   grid-column: full-start/ full-end;
-  background: url(/images/bg-header.jpg);
+  background: url(./images/bg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
