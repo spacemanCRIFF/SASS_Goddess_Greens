@@ -1,0 +1,18 @@
+{
+  "name": "gamba",
+  "version": "1.0.0",
+  "description": "Organic Eating. Eat Better. Feel Better.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Organic",
+    "Healthy",
+    "Eating",
+    "Foods",
+    "Smoothies"
+  ],
+  "author": "Myles Luke",
+  "license": "ISC"
+}

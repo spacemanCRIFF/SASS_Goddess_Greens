@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  display: flex;
+  flex-direction: right;
+  justify-content: space-around;
+  margin-top: 5rem;
+  height: 55vh;
+  width: 98.5vw;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+footer h1 {
+  text-align: left;
+  font-size: 3.5rem;
+  color: #00ff00;
+}
+footer ul {
+  list-style: none;
+  margin-top: 7.5rem;
+  font-size: 2.25rem;
+  text-align: left;
+}
+
+footer .social {
+  text-align: center;
+}
+footer .social h1 {
+  margin-bottom: 10px;
+}
+footer .social a {
+  color: white;
+  padding: 2px 0px 2px 0px;
+}
+footer .social a:hover {
+  color: #00ff00;
+  padding: 2px 0px 2px 0px;
+}
+.caption {
+  height: 100vh;
+}
+.about {
+  height: 100vh;
+}
+.caption:hover .header__logo {
+  opacity: 0;
+}
