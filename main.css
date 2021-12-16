@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -31,29 +31,18 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start]
-    (minmax(min-content, 60rem)) [2] [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
-      2,
-      minmax(-webkit-min-content, 60rem)
-    )
-    [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
-      2,
-      minmax(min-content, 60rem)
-    )
-    [center-end] minmax(6rem, 1fr) [full-end];
+  -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] (minmax(min-content, 60rem))[2] [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(-webkit-min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
   -ms-grid-rows: 100vh min-content;
-  grid-template-rows: 100vh -webkit-min-content;
-  grid-template-rows: 100vh min-content;
+      grid-template-rows: 100vh -webkit-min-content;
+      grid-template-rows: 100vh min-content;
   row-gap: 2rem;
 }
 
@@ -152,7 +141,7 @@ body {
   font-family: "Roboto", sans-serir;
   text-transform: uppercase;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -165,26 +154,26 @@ body {
 .btn:hover {
   cursor: pointer;
   -webkit-transform: translateY(-0.3rem);
-  transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
   background: #44bd32;
 }
 
 /* Created on 27/04/2020 */
 .header {
   grid-column: full-start/ full-end;
-  background: url(./images/bg-header.jpg);
+  background: url(../SASS_Goddess_Greens/images/bg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 2.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr)) [2];
-  grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
-  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
   -ms-grid-rows: min-content 1fr minmax(6rem, min-content) 1fr;
-  grid-template-rows: -webkit-min-content 1fr minmax(6rem, -webkit-min-content) 1fr;
-  grid-template-rows: min-content 1fr minmax(6rem, min-content) 1fr;
+      grid-template-rows: -webkit-min-content 1fr minmax(6rem, -webkit-min-content) 1fr;
+      grid-template-rows: min-content 1fr minmax(6rem, min-content) 1fr;
 }
 
 .header__logo {
@@ -201,9 +190,9 @@ body {
   font-size: 10rem;
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-flex-item-align: end;
-  align-self: flex-end;
+      align-self: flex-end;
 }
 
 .header__heading-secondary {
@@ -211,18 +200,18 @@ body {
   text-transform: uppercase;
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__btn {
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
 }
 
 .header__nav {
@@ -231,8 +220,8 @@ body {
   grid-column: 2 / span 1;
   justify-self: flex-end;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__nav-items {
@@ -246,8 +235,7 @@ body {
   margin-left: 4rem;
 }
 
-.header__nav-link:link,
-.header__nav-link:visited {
+.header__nav-link:link, .header__nav-link:visited {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
@@ -256,8 +244,7 @@ body {
   transition: all 0.2a;
 }
 
-.header__nav-link:link:hover,
-.header__nav-link:visited:hover {
+.header__nav-link:link:hover, .header__nav-link:visited:hover {
   color: #85bc45;
 }
 
@@ -269,13 +256,13 @@ body {
   grid-column: center-start / center-end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr)) [3];
-  grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  -ms-grid-columns: (minmax(min-content, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
   row-gap: 2rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -283,7 +270,7 @@ body {
   font-size: 5rem;
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .about__img {
@@ -296,7 +283,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .about__info {
@@ -316,15 +303,13 @@ body {
   font-size: 1.5rem;
 }
 
-.about__info--1,
-.about__info--3 {
+.about__info--1, .about__info--3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
 }
 
-.about__info--2,
-.about__info--4 {
+.about__info--2, .about__info--4 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
@@ -340,8 +325,8 @@ body {
   display: grid;
   justify-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 10rem;
   border: 0.5rem solid white;
@@ -376,7 +361,7 @@ body {
 .products__main-heading {
   font-size: 6rem;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .products__nav-items {
@@ -384,8 +369,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .products__nav-links {
@@ -408,21 +393,21 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 4rem;
-  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .products .product {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 25rem min-content;
-  grid-template-rows: 25rem -webkit-min-content;
-  grid-template-rows: 25rem min-content;
+      grid-template-rows: 25rem -webkit-min-content;
+      grid-template-rows: 25rem min-content;
 }
 
 .products .product:hover {
   -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -438,7 +423,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   grid-column: 1 / -1;
 }
 
@@ -446,13 +431,13 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr, 1fr, 2fr;
-  grid-template-columns: 2fr, 1fr, 2fr;
-  -ms-grid-rows: (1fr) [3];
-  grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 2fr, 1fr, 2fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 4rem, 8rem;
   gap: 0.5rem;
 }
@@ -485,7 +470,7 @@ body {
 
 .products .product__details-icon:hover {
   -webkit-transform: translateY(-0.3rem);
-  transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
   fill: white;
 }
 
@@ -493,24 +478,24 @@ body {
   grid-column: center-start / center-end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr)) [3];
-  grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  -ms-grid-columns: (minmax(min-content, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
   -ms-grid-rows: min-content min-content 30rem;
-  grid-template-rows: -webkit-min-content -webkit-min-content 30rem;
-  grid-template-rows: min-content min-content 30rem;
+      grid-template-rows: -webkit-min-content -webkit-min-content 30rem;
+      grid-template-rows: min-content min-content 30rem;
   gap: 3rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
 }
 
 @media only screen and (max-width: 56.25em) {
   .deal {
-    -ms-grid-columns: (minmax(min-content, 1fr)) [6];
-    grid-template-columns: repeat(6, minmax(-webkit-min-content, 1fr));
-    grid-template-columns: repeat(6, minmax(min-content, 1fr));
+    -ms-grid-columns: (minmax(min-content, 1fr))[6];
+        grid-template-columns: repeat(6, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(6, minmax(min-content, 1fr));
   }
 }
 
@@ -583,14 +568,14 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .deal__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .deal__img--main {
@@ -601,7 +586,7 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 @media only screen and (max-width: 56.25em) {
