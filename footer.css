@@ -16,7 +16,7 @@ footer {
 footer h1 {
   text-align: left;
   font-size: 3.5rem;
-  color: #00ff00;
+  color: #85bc45;
 }
 footer ul {
   list-style: none;
@@ -47,4 +47,7 @@ footer .social a:hover {
 }
 .caption:hover .header__logo {
   opacity: 0;
+}
+.flex {
+  display: flex;
 }
